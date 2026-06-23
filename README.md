@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004264-blue)](https://doi.org/10.82901/nemar.on004264)
+
 # Steer the Ship
 
 Twenty-one participants learned to control the trajectory of a ship, represented by centrally presented rotating arrow. Prior to each round participants were cued about the degree of controller and environmental noise ("wind") they would experience. During the round, participants pressed the 'f' and 'j' keys to apply angular force in either a clockwise or counterclockwise direction. The goal of the task was to keep the ship closely oriented towards a target. Points were accumulated depending on the mean distance to target. The ship would crash if it strayed too far from the target (and the round would end). Each round lasted up to 1 minute. The underlying physics were based on the pole-and-cart problem (i.e., unstable).  
