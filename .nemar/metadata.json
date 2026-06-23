@@ -1,0 +1,31 @@
+{
+  "version": "2.0",
+  "dataset_id": "on004264",
+  "source": "openneuro",
+  "source_id": "ds004264",
+  "title": "Steer the Ship",
+  "authors": {
+    "Cameron D. Hassall": {},
+    "Yan Yan": {},
+    "Laurence T. Hunt": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds004264.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.2.1",
+  "recording_modality": [
+    "beh",
+    "eeg"
+  ],
+  "datatypes": [
+    "beh",
+    "eeg"
+  ]
+}
