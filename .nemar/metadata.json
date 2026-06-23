@@ -1,31 +1,95 @@
 {
   "version": "2.0",
-  "dataset_id": "on004264",
-  "source": "openneuro",
-  "source_id": "ds004264",
+  "pipeline_stage": "enriched",
   "title": "Steer the Ship",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Cameron D. Hassall": {},
     "Yan Yan": {},
     "Laurence T. Hunt": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004264.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004264",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004264",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004264",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.2.1",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "beh",
     "eeg"
   ],
-  "datatypes": [
-    "beh",
-    "eeg"
-  ]
+  "resource_type_specific": "Neuroimaging Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".PNG",
+    ".eeg",
+    ".json",
+    ".m",
+    ".md",
+    ".psyexp",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises behavioral and neuroimaging data from 21 participants performing a dynamic ship-steering task with varying levels of controller and environmental noise. Participants controlled a centrally presented rotating arrow using keyboard inputs to maintain the ship's orientation toward a target, with performance-dependent point accumulation. The task implements unstable dynamics based on the pole-and-cart problem across four noise conditions, providing a rich experimental paradigm for investigating motor control, decision-making, and adaptation under uncertainty. Note: Participant 12 should be excluded from event-locked analyses due to bad triggers (trigger cable was partially disconnected).",
+  "methods_description": "Participants performed a ship-steering task using keyboard presses ('f' and 'j' keys) to apply angular force in clockwise or counterclockwise directions. Four noise conditions were implemented: no noise, environmental noise only, controller noise only, and combined environmental and controller noise. Each round lasted up to 1 minute, with task performance measured by mean distance to target and crash detection when the ship strayed beyond acceptable bounds. Trigger markers were recorded to denote condition cues, round starts, button presses, computer actions, crashes, successes, and point displays. Note: reaction time for the first button press in each round is not recorded in the event markers but is available in the participantActions column.",
+  "keywords": [
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "decision-making"
+    },
+    {
+      "term": "dynamic task"
+    },
+    {
+      "term": "noise manipulation"
+    },
+    {
+      "term": "behavioral data"
+    },
+    {
+      "term": "tracking task"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "pole-and-cart problem"
+    },
+    {
+      "term": "uncertainty"
+    },
+    {
+      "term": "adaptation"
+    },
+    {
+      "term": "steering task"
+    },
+    {
+      "term": "keyboard response"
+    }
+  ],
+  "source_hash": "969b5faef5b82b393fd436bc365cf40cade16798da93b4c92390d2ef08e4ddd8"
 }
