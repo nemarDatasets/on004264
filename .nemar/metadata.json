@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Steer the Ship",
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 21 participants performing a dynamic ship-steering task under four noise conditions: no noise, environmental noise only, controller noise only, and combined environmental and controller noise. Participants controlled a centrally presented rotating arrow to maintain target orientation while experiencing manipulated levels of environmental and controller noise. The task employed unstable dynamics based on the pole-and-cart problem, with performance measured by proximity to target and crash avoidance. This dataset provides rich behavioral and neural data for investigating decision-making, motor control, and adaptation under uncertainty. Note: Participant 12 should be excluded from event-locked analyses due to bad triggers (trigger cable was partially disconnected). The reaction time for the first button press in each round is not recorded in the standard event markers but is available in the participantActions column.",
-  "methods_description": "Participants performed a ship-steering task using keyboard controls ('f' and 'j' keys) to apply clockwise or counterclockwise angular force. Four noise conditions were presented: no noise, environmental noise only, controller noise only, and combined environmental and controller noise. Each round lasted up to 1 minute with points accumulated based on mean distance to target. EEG was recorded with event markers indicating condition cues, round starts, button presses, crashes, and successes.",
+  "description": "EEG dataset from 21 participants performing a continuous control task in which they steered a ship, shown as a rotating arrow, toward a target using left and right key presses. The underlying dynamics were unstable, based on the pole-and-cart problem. Participants were cued before each round about the level of controller noise and environmental noise (wind), giving four noise conditions. Event triggers mark cues, round start, button presses, crashes, successes, and points display.",
+  "methods_description": "Participants pressed the 'f' and 'j' keys to apply clockwise or counterclockwise angular force to keep the ship oriented toward a target. Rounds lasted up to 1 minute and ended early if the ship crashed. Points were awarded by mean distance to target. Four conditions crossed controller noise and environmental noise (none, environmental only, controller only, both). Event triggers were recorded with EEG.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,38 +16,24 @@
       "term": "EEG"
     },
     {
-      "term": "motor control"
-    },
-    {
-      "term": "decision-making"
-    },
-    {
-      "term": "noise"
-    },
-    {
-      "term": "sensorimotor learning"
+      "term": "continuous control"
     },
     {
       "term": "uncertainty"
     },
     {
-      "term": "ship-steering task"
+      "term": "noise"
     },
     {
-      "term": "tracking task"
+      "term": "decision making"
     },
     {
-      "term": "unstable dynamics"
+      "term": "pole-and-cart task"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004264",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004264",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -60,6 +46,11 @@
       "identifier": "10.18112/openneuro.ds004264.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004264",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -69,7 +60,7 @@
     "eeg"
   ],
   "sizes": [
-    "3.5 GB (90 files)"
+    "3.30 GB (90 files)"
   ],
   "formats": [
     ".PNG",
